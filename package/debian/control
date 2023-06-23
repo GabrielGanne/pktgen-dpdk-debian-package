@@ -1,0 +1,18 @@
+Source: pktgen-dpdk
+Section: utils
+Priority: optional
+Maintainer: Gabriel Ganne <gabriel.ganne@gmail.com>
+Build-Depends: debhelper-compat (= 12),
+ quilt, dpdk-dev
+Standards-Version: 4.5.0
+Homepage: https://github.com/pktgen/Pktgen-DPDK
+
+Package: pktgen-dpdk
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Pktgen (Packet Gen-erator)
+ Pktgen, (Packet Gen-erator) is a software based traffic generator powered by
+ the DPDK fast packet processing framework.
+ .
+ Pktgen was created 2010 by Keith Wiles @ windriver.com, now at intel.com
